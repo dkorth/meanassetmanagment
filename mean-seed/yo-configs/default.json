@@ -15,7 +15,7 @@
 		],
 		"optGithubName":"dkorth",
 		"optAuthorName":"Dewayne Korth <dewayne.korth@gmail.com>",
-		"optOperatingSystem":"windows",
+		"optOperatingSystem":"mac",
 		"optServerPort":3000,
 		"optSocketPort":3001,
 		"optTestServerPort":3005,
