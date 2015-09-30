@@ -1,17 +1,19 @@
 {
   "name": "mean-company",
   "version": "0.0.0",
-  "homepage": "https://github.com/dewko/mean-company",
+  "homepage": "https://github.com/dkorth/mean-company",
   "authors": [
-    "dkorth@bluefinllc.com"
+    "Dewayne Korth <dewayne.korth@gmail.com>"
   ],
-  "description": "My really cool app!",
+  "description": "My really cool app",
   "keywords": [
     "mean-seed",
+    "mean",
+    "mean-stack",
+    "generator-mean-seed",
     "javascript",
     "angular",
     "node",
-    "myproject",
     "app"
   ],
   "dependencies": {

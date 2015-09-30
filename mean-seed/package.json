@@ -1,9 +1,9 @@
 {
-	"author": "dkorth@bluefinllc.com",
+	"author": "Dewayne Korth <dewayne.korth@gmail.com>",
 	"name": "mean-company",
 	"version": "0.0.0",
-	"description": "My really cool app!",
-	"homepage": "https://github.com/dewko/mean-company",
+	"description": "My really cool app",
+	"homepage": "https://github.com/dkorth/mean-company",
 	"dependencies": {
 		"async": "1.3.0",
 		"body-parser": "1.13.2",

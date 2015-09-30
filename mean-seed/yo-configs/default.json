@@ -1,0 +1,30 @@
+{
+	"prompts":{
+		"optAppName":"mean-company",
+		"optAppTitle":"Mean Company",
+		"optAppDescription":"My really cool app",
+		"optAppKeywords":[
+			"mean-seed",
+			"mean",
+			"mean-stack",
+			"generator-mean-seed",
+			"javascript",
+			"angular",
+			"node",
+			"app"
+		],
+		"optGithubName":"dkorth",
+		"optAuthorName":"Dewayne Korth <dewayne.korth@gmail.com>",
+		"optOperatingSystem":"mac",
+		"optServerPort":3000,
+		"optSocketPort":3001,
+		"optTestServerPort":3005,
+		"optTestSocketPort":3006,
+		"optTestDatabase":"test_temp",
+		"optNpmInstall": 1,
+		"optBowerInstall": 1,
+		"optSeleniumInstall":0,
+		"optGruntQ": 1,
+		"optUseGitSeparateBranch": 1
+	}
+}
