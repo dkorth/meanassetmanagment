@@ -1,8 +1,8 @@
 {
 	"prompts":{
 		"optAppName":"mean-company",
-		"optAppTitle":"Mean Company",
-		"optAppDescription":"My really cool app",
+		"optAppTitle":"MEAN Company",
+		"optAppDescription":"a cool app",
 		"optAppKeywords":[
 			"mean-seed",
 			"mean",
@@ -15,7 +15,7 @@
 		],
 		"optGithubName":"dkorth",
 		"optAuthorName":"Dewayne Korth <dewayne.korth@gmail.com>",
-		"optOperatingSystem":"mac",
+		"optOperatingSystem":"windows",
 		"optServerPort":3000,
 		"optSocketPort":3001,
 		"optTestServerPort":3005,
