@@ -43,6 +43,7 @@ var DbUpdateApi =require(pathPart+'dbUpdate/dbUpdate.api.js');
 var E2eMocksApi =require(pathPart+'e2eMocks/e2eMocks.api.js');
 //site-specific - require other api files here
 //yeoman generated REQUIRE here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
+var ProductApi =require(pathPart+'product/product.api.js');
 //end: yeoman generated REQUIRE here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
 
 
@@ -86,7 +87,10 @@ module.exports = function(cfg, server, db){
 	});
 	//site-specific - load other api's here
 	//yeoman generated INIT API MODULES here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
-	//end: yeoman generated INIT API MODULES here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
+	var productApi = new ProductApi({
+	db: db
+});
+//end: yeoman generated INIT API MODULES here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
 
 	
 	// set up auth middleware
@@ -156,7 +160,13 @@ module.exports = function(cfg, server, db){
 		},
 		//site-specific - setup other controllers/api's here
 		//yeoman generated ENDPOINTS here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
-		//end: yeoman generated ENDPOINTS here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
+		product: {
+	modules: {
+		product: productApi
+	},
+	middleware: []
+},
+//end: yeoman generated ENDPOINTS here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
 	};
 
 	

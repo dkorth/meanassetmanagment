@@ -23,7 +23,8 @@ angular.module('jrg', [
 		'jackrabbitsgroup.angular-string',
 		'jackrabbitsgroup.angular-array',
 		//directives
-		'jackrabbitsgroup.angular-forminput'
+		'jackrabbitsgroup.angular-forminput',
+		'ngImgCrop'
 	]
 );
 
@@ -194,7 +195,14 @@ config(['$routeProvider', '$locationProvider', 'appConfigProvider', '$compilePro
 	*/
 	
 	//yeoman generated routes here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
-	//end: yeoman generated routes here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
+	$routeProvider.when(appPathRoute+'my-page', {templateUrl: pagesPath+'/my-page/my-page.html',
+		resolve: {
+			auth: function(appAuth) {
+				return appAuth.checkSess({});
+			}
+		}
+	});
+//end: yeoman generated routes here - DO NOT DELETE THIS COMMENT AS IT IS USED BY YEOMAN TO GENERATE A NEW ROUTE!
 	
 
 	/**

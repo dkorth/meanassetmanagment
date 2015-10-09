@@ -28,7 +28,11 @@
 							"angular-cookies/angular-cookies.min.js",
 							"momentjs/min/moment.min.js",
 							"angular-array/array.min.js",
-							"angular-string/string.min.js"
+							"angular-string/string.min.js",
+							"ngImgCrop/compile/minified/ng-img-crop.js"
+						],
+						"css": [ 
+							"ngImgCrop/compile/minified/ng-img-crop.css"
 						]
 					},
 					"dirs": [
@@ -274,6 +278,17 @@
 									"error-msg.spec.js"
 								]
 							}
+						},
+						{
+							"name": "items-list",
+							"files": {
+								"js": [
+									"items-list.js"
+								],
+								"testUnit": [
+									"items-list.spec.js"
+								]
+							}
 						}
 					]
 				},
@@ -347,6 +362,20 @@
 								],
 								"testUnit": [
 									"layout.spec.js"
+								]
+							}
+						},
+						{
+							"name": "my-directive",
+							"files": {
+								"js": [
+									"my-directive.js"
+								],
+								"testUnit": [
+									"my-directive.spec.js"
+								],
+								"less": [
+									"my-directive.less"
 								]
 							}
 						}
@@ -561,6 +590,9 @@
 										"html": [
 											"test.html"
 										],
+										"less": [
+											"test.less"
+										],
 										"testUnit": [
 											"TestCtrl.spec.js"
 										]
@@ -635,6 +667,23 @@
 									}
 								}
 							]
+						},
+						{
+							"name": "my-page",
+							"files": {
+								"html": [
+									"my-page.html"
+								],
+								"js": [
+									"MyPageCtrl.js"
+								],
+								"testUnit": [
+									"MyPageCtrl.spec.js"
+								],
+								"less": [
+									"my-page.less"
+								]
+							}
 						}
 					]
 				}
